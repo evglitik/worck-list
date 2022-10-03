@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/worck-list.git/static/css/main.fd570786.css",
+    "main.js": "/worck-list.git/static/js/main.e3f3000b.js",
+    "index.html": "/worck-list.git/index.html",
+    "main.fd570786.css.map": "/worck-list.git/static/css/main.fd570786.css.map",
+    "main.e3f3000b.js.map": "/worck-list.git/static/js/main.e3f3000b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd570786.css",
+    "static/js/main.e3f3000b.js"
+  ]
+}
