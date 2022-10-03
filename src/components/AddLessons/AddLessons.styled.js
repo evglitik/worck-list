@@ -8,8 +8,12 @@ export const Input = styled.input`
   height: 36px;
   width: 100%;
   margin-bottom: 12px;
+  font-size: 22px;
+  padding: 4px;
+  border-radius: 10px;
   &:hover {
     cursor: pointer;
+    background-color: #434343;
   }
 `;
 

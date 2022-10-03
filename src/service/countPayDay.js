@@ -29,12 +29,8 @@ export const countPayDay = (worcks, dateInterval) => {
       return el;
     });
 
-  let allMoneyIndivid =
-    ((individualAll * PAY_INDIVIDUAL) / 100) * INDIVIDUAL_PRICE;
-
-  let allMoneyIntegr = ((integralAll * PAY_INTEGR) / 100) * INTEGRAL_PRAICE;
-
-  return allMoneyIndivid + allMoneyIntegr;
+  let allMoneyPay = pay(individualAll, integralAll);
+  return allMoneyPay;
 };
 
 const validFormatDate = d => {
@@ -49,4 +45,10 @@ const validFormatDate = d => {
 
 export const cauntDateNow = () => {
   return monthList[DATE_NOW - 1];
+};
+
+export const pay = (ind, int) => {
+  let indPay = ((ind * PAY_INDIVIDUAL) / 100) * INDIVIDUAL_PRICE;
+  let intPay = ((int * PAY_INTEGR) / 100) * INTEGRAL_PRAICE;
+  return indPay + intPay;
 };

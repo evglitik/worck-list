@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { getWorcks } from 'service/api';
 import { countPayDay } from 'service/countPayDay';
+import { TodayStatystick } from 'components/TodayStatystick/TodayStatystick';
 
 export const Worck = () => {
   const updateComp = true;
@@ -35,6 +36,7 @@ export const Worck = () => {
   return (
     <>
       <AddLessons pushNewWorckEl={pushNewWorckEl} />
+      {worckList.length > 0 && <TodayStatystick worckList={worckList} />}
       {!isLoading ? (
         <PayStatus setInterval={setInterval} price={price} />
       ) : (

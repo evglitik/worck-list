@@ -6,6 +6,7 @@ import {
   ContainerPayStatus,
   TextPayStatus,
   ButtonPayStatus,
+  TextButtonPayStatus,
 } from './PayStatus.styled';
 
 export const PayStatus = ({ price, setInterval }) => {
@@ -22,8 +23,8 @@ export const PayStatus = ({ price, setInterval }) => {
 
   return (
     <ContainerPayStatus>
-      <TextPayStatus>Сумма: {price} </TextPayStatus>
-
+      <TextPayStatus>Сумма за місяць: {price} </TextPayStatus>
+      <TextButtonPayStatus>Змінити місяць:</TextButtonPayStatus>
       <ButtonPayStatus type="button" onClick={() => togleMontch()}>
         {!changeMonth ? 'Вибрати місяць' : changeMonth}
       </ButtonPayStatus>

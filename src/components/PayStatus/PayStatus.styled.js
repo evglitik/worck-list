@@ -26,3 +26,9 @@ export const ButtonPayStatus = styled.button`
     background-color: #434343;
   }
 `;
+
+export const TextButtonPayStatus = styled.p`
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 4px;
+`;
