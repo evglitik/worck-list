@@ -2,7 +2,7 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://evglitik.github.io/worck-list.git/",
+  "homepage": "https://evglitik.github.io/worck-list/",
   "dependencies": {
     "@mui/x-date-pickers": "^5.0.3",
     "@testing-library/jest-dom": "^5.16.3",
